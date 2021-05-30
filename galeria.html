@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Nos Vamoos</title>
+      <link rel="stylesheet" href="css/estilos.css">
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="js/jquery.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900" rel="stylesheet">
+	<link rel="shortcut icon" href="jpg/favicon.ico" type="image/x-icon"/>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<!--PORTADA-->
+	<div class="wrapper">
+		
+      <nav>
+            <span id="brand">
+                 <a href="index.html"><img class="img-fluid" src="jpg/logo.png" width="100px" alt=""></a>
+            </span>
+
+            <ul class="menu">
+                  <li><a class="link" href="index.html">HOME</a></li>
+                  <li><a class="link" href="nosotros.html">NOSOTROS</a></li>
+				  <li><a class="link" href="eventos.html">EVENTOS</a></li>
+				  <li><a class="link" href="galeria.html">GALERIA</a></li>
+                  <li><a class="link" href="contacto.html">CONTACTO</a></li>
+                  
+            </ul>
+
+            <div id="toggle">
+                  <div class="span" id="uno"></div>
+                  <div class="span" id="dos"></div>
+                  <div class="span" id="tres"></div>
+            </div>
+      </nav>
+      <div id="resize">
+            <ul class="menu">
+                 <li><a href="index.html">HOME</a></li>
+                  <li><a href="nosotros.html">ABOUT</a></li>
+				  <li><a href="eventos.html">EVENTS</a></li>
+				  <li><a href="galeria.html">GALERY</a></li>
+				<li><a href="contacto.html">CONTACT</a></li>
+            </ul>
+      </div>
+		</div>
+
+	
+	<footer>
+<div class="container-fluid text-center" style="background: #000">
+	<div class="row justify-content-center">
+		<div class="col-xs-10 col-sm-12 col-md-12">
+			<img src="jpg/logo.png" class="img-fluid center-block" width="100px" alt="">
+		</div>
+		   <div class="col-xs-12 col-sm-12 col-md-12 icons">
+		   	<ul class="social-rs">
+		   	<li><a href="#" target="_blank"><i class="fa fa-lg fa-facebook-official"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
+		   	<li><a href="#" target="_blank"><i class="fa fa-lg fa-youtube-play"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+		   	<li><a href="#" target="_blank"><i class="fa fa-lg fa-whatsapp"></i></a></li>
+		   	</ul>
+		</div>
+		<p class="text-center">NosVamoos©2018. Todos los derechos reservados.</p>
+		</div>
+	</div>
+</footer>
+	
+	
+      <script>
+      $("#toggle").click(function() {
+
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+      });
+      </script>
+</body>
+</html>

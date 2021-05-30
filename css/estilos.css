@@ -1,0 +1,500 @@
+* {
+      margin: 0px;
+      padding: 0px;
+      text-decoration: none;
+      list-style: none;
+}
+.autor{
+	position:absolute;
+	text-align: left;
+	bottom: 5%;
+	left: 5%
+}
+.autor_contacto{
+	position:absolute;
+	text-align: left;
+	bottom: 5%;
+	left: 5%
+}
+body{
+	width:100%;
+	margin: 0;
+	padding: 0;
+}
+.box-content{
+	margin-bottom:30px;
+}
+.card-body{
+	padding: 15px !important;
+}
+#contacto{
+	height:100vh;
+	overflow: hidden;
+}
+#contact{
+	height:50px;
+	width: 100%;
+	position: absolute;
+	bottom: -20px;
+	background-color: #000
+}
+#eventos{
+	margin-top:10%;
+}
+#eventos div{
+	margin-bottom:5%
+}
+#eventos div img{
+	border: dashed 4px #fff;
+	border-width:thin;
+}
+
+
+footer{
+	height:50px;
+	width: 100%;
+	position: relative;
+	background-color: #000
+}
+footer p{
+	color:#fff;
+	text-align: center
+}
+.fa-angle-down{
+	filter: grayscale(1);
+	color: #fff;
+	animation:bajar 1.2s infinite;
+}
+.fa-facebook-official{
+	border-radius: 50%;
+	color: #fff;
+	
+}
+#eventos div img:hover{
+	cursor: pointer;
+}
+
+.fa-facebook-official:hover{
+	color: #fff;
+	background-color: #3b5998;
+	border-radius: 50%;	
+	filter: none;
+}
+.fa-youtube-play{
+	border-radius: 50%;
+}
+.fa-lg{
+	font-size: 2.5em;
+}
+.fa-youtube-play:hover{
+	color: #fff;
+	background-color: #AD0D0F;
+	border-radius: 50%;	
+	filter: none;
+}
+.fa-twitter{
+	border-radius: 50%;
+}
+.fa-twitter:hover{
+	color: #fff;
+	background-color: #037EB1;
+	border-radius: 50%;	
+	filter: none;
+}
+.fa-instagram{
+	border-radius: 50%;
+}
+.fa-instagram:hover{
+	color: #fff;
+	background: linear-gradient(220deg,#9C0097,#F00105,#E7ED08);
+	border-radius: 50%;	
+	filter: none;
+}
+.fa-whatsapp{
+	border-radius: 50%;
+}
+.fa-whatsapp:hover{
+	color: #fff;
+	background-color: #2e9d1f;
+	border-radius: 50%;	
+	filter: none;
+}
+figure{
+	margin:0 !important;
+}
+figure.fondo{
+	 position: relative;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+figure.fondo:after {
+  background-color: rgba(0,0,0,1);
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+figure.fondo:hover:after,
+figure.fondo.hover:after {
+  opacity: 0.8;
+	cursor: pointer
+}
+figure.fondo figcaption{
+  top: 0%;
+  left: 0;
+  right: 0;
+  height: 100%;
+	padding: 15px;
+  position: absolute;
+  opacity: 0;
+	background-color:rgba(0,0,0,0.65);
+	color: #fff;
+  z-index: 1;
+	transition: all 0.6s ease-in-out
+}
+figure.fondo:hover figcaption{
+	opacity:1;
+	cursor: pointer
+}
+figcaption h6,figcaption h5{
+	font-weight:200
+}
+.mision{
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 20px;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #fff;
+}
+nav {
+      width: 100%;
+      background: #000;
+      height: 70px;
+      position: fixed;
+      z-index: 2;
+}
+ 
+nav #brand {
+      float: left;
+      display: block;
+      margin-left: 50px;
+      font-size: 30px;
+      line-height: 70px;
+      font-weight: bold;
+}
+ 
+nav #brand a {
+      color: #fff;
+      transition: all 0.3s ease-out;
+      font-family: "Poppins";
+      font-weight: 300;
+}
+ 
+nav .menu {
+      float: left;
+      left:15%;
+      position: relative;
+}
+ 
+nav .menu li {
+      display: inline-block;
+      padding: 0px 30px;
+      cursor: pointer;
+      line-height: 70px;
+      position: relative;
+      transition: all 0.3s ease-out;
+}
+ 
+nav .menu li a {
+      color: #fff;
+      font-family: "Poppins";
+      font-weight: 200;
+	text-decoration: none
+}
+ 
+#toggle {
+      position: absolute;
+      right: 20px;
+      top: 14px;
+      z-index: 999;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      float: right;
+      transition: all 0.3s ease-out;
+      visibility: hidden;
+      opacity: 0;
+}
+ 
+#toggle .span {
+      height: 3px;
+      background: #fff;
+      transition: all 0.3s ease-out;
+      backface-visibility: hidden;
+      margin: 5px auto;
+}
+ 
+#toggle.on #uno {
+      transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+ 
+#toggle.on #dos {
+      opacity: 0;
+}
+ 
+#toggle.on #tres {
+      transform: rotate(-45deg) translateX(8px) translateY(-10px);
+} 
+#resize {
+      z-index: 1;
+      top: 0px;
+      position: absolute;
+      background: #000;
+      width: 100%;
+      height: 100%;
+	overflow: hidden;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1s ease-out;
+      display: table;
+}
+ 
+#resize .menu {
+      height: 90px;
+      display: table-cell;
+      vertical-align: center;
+}
+ 
+#resize .menu li {
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 50px;
+      min-height: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+}
+ 
+#resize li:nth-child(1) {
+      margin-top:50px;
+}
+ 
+#resize .menu li a {
+      color: #fff;
+}
+ 
+#resize.active {
+      visibility: visible;
+      opacity: 0.99;
+}
+.respuesta{
+	background-color: rgba(255,255,255,0.47);
+	margin-top: 10%;
+	border-radius: 20px;
+	border: 1px solid #fff;
+}
+ 
+ #map{
+	
+	height:500px;
+	width: 100%;
+}
+
+
+
+.redes{
+	position:absolute;
+	text-align:right;
+	bottom: 5%;
+	right: 5%
+}
+.social-rs{
+	list-style-type:none;
+	display: inline-flex;
+}
+.social-rs li a i{
+	line-height:1;
+	cursor:pointer;
+	padding: 10px;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	font-weight: 500;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.hover-container{
+	height: 100%;
+	overflow: hidden;
+	transition: opacity 5s ease;
+	opacity: 1;
+}
+.hover-tile{
+	color:#fff;
+	background: inherit;
+	overflow: hidden;	
+}
+.hover-tile-hide{
+	background:rgba(0,0,0,.7)
+}
+.link::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: width .3s;
+}
+.link:hover::after{
+	width: 100%;
+	transition: width .3s
+}
+
+@keyframes bajar{
+    0%{transform:translateY(0)}
+	50%{transform:translateY(-12px)}
+	100%{transform:translateY(0)}
+}
+
+.content-main{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.btn-main{
+	background-color: transparent;
+	border: 1px solid #fff;
+	color:#fff;
+	padding: 15px 40px
+}
+.btn-main:hover{
+	background-color:rgba(0,0,0,0.32);
+	color: #fff;
+	text-decoration: none
+	
+}
+form{
+	padding: 10px 20px;
+	width: 450px;
+	background-color:rgba(254,254,254,0.20);
+	margin: auto;
+	border-radius: 10px
+}
+input, textarea, select{
+	width: 100%;
+	margin-bottom: 20px !important;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 17px;
+	border: none;
+	border-radius: 20px
+}
+input:last-child{
+	width:50%
+}
+input,select,textarea:focus{
+	outline:0
+}
+textarea{
+	min-height: 100px;
+	max-height: 200px;
+	max-width: 100%
+}
+#boton{
+	background-color:#000;
+	color:#fff;
+}
+#boton:hover{
+	
+	cursor: pointer
+}
+form h2{
+	color:#fff;
+}
+.wrapper {
+      width: 100%;
+      background:url(../jpg/fondo5.jpg) no-repeat 50% 50%;
+      background-size: cover;
+	background-attachment: fixed;
+      display:table;
+	  height: 700px;
+	  min-height: 100%
+}
+@media(max-width: 768px) {
+      #toggle {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 6px;
+      }
+ 
+      nav #brand {
+            margin-left: 18px;
+      }
+ 
+      .menu a {
+            font-family: "Poppins";
+            font-weight: 200;
+            font-size: 20px;
+      }
+ 
+      nav .menu {
+            display: none;
+      }
+}
+@media(max-width: 984px) and (min-width:838px){
+	nav .menu {
+      left:0%;
+	}
+}
+@media only screen and (max-width: 768px) {
+      #resize {
+            visibility: hidden;
+      }
+	.hide-phone{
+		visibility: hidden;
+		display: none
+	}
+	.autor{
+	position:absolute;
+	text-align: left;
+	bottom: 0%;
+	left: 2%
+}
+.redes{
+	position:absolute;
+	text-align:right;
+	bottom: 0%;
+	right: 2%
+}
+	.btn-main{
+		margin-bottom: 5%
+}
+	.mision{
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 20px;
+	border: 1px solid #fff;
+}
+	.autor_contacto{
+	position:relative;
+	bottom: 0%;
+	left: 0%
+}
+	form{
+		width: 100%;
+		margin-top: 50px
+	}
+	#contact{
+	width: 100%;
+		position: fixed;
+	bottom: -20px;
+	background-color: #000
+}
+}

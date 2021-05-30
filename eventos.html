@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Nos Vamoos</title>
+      <link rel="stylesheet" href="css/estilos.css">
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="js/jquery.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900" rel="stylesheet">
+	<link rel="shortcut icon" href="jpg/favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+<!--PORTADA-->
+	<div class="wrapper">
+      <nav>
+            <span id="brand">
+                 <a href="index.html"><img class="img-fluid" src="jpg/logo.png" width="100px" alt=""></a>
+            </span>
+
+            <ul class="menu">
+                  <li><a class="link" href="index.html">HOME</a></li>
+                  <li><a class="link" href="nosotros.html">NOSOTROS</a></li>
+				  <li><a class="link" href="eventos.html">EVENTOS</a></li>
+				  <li><a class="link" href="galeria.html">GALERIA</a></li>
+                  <li><a class="link" href="contacto.html">CONTACTO</a></li>
+                  
+            </ul>
+
+            <div id="toggle">
+                  <div class="span" id="uno"></div>
+                  <div class="span" id="dos"></div>
+                  <div class="span" id="tres"></div>
+            </div>
+      </nav>
+      <div id="resize">
+            <ul class="menu">
+                 <li><a href="index.html">HOME</a></li>
+                  <li><a href="nosotros.html">ABOUT</a></li>
+				  <li><a href="eventos.html">EVENTS</a></li>
+				  <li><a href="galeria.html">GALERY</a></li>
+				<li><a href="contacto.html">CONTACT</a></li>
+            </ul>
+      </div>
+		
+<!--EVENTOS-->
+	<div id="eventos" class="row no-gutters text-center">
+		<div class="col-md-6 col-lg-2"><img class="img-fluid rounded-circle" width="75%" src="jpg/enero.jpg" alt="Eventos de Enero"></div>
+		<div class="col-md-6 col-lg-2"><img class="img-fluid rounded-circle" width="75%" src="jpg/febrero.jpg" alt="Eventos de Febrero"></div>
+		<div class="col-md-6 col-lg-2"><img class="img-fluid rounded-circle" width="75%" src="jpg/marzo.jpg" alt="Eventos de Marzo"></div>
+		<div class="col-md-6 col-lg-2"><img class="img-fluid rounded-circle" width="75%" src="jpg/abril.jpg" alt="Eventos de Abril"></div>
+		<div class="col-md-6 col-lg-2"><img class="img-fluid rounded-circle" width="75%" src="jpg/mayo.jpg" alt="Eventos de Mayo"></div>
+		<div class="col-md-6 col-lg-2"><img class="img-fluid rounded-circle" width="75%" src="jpg/junio.jpg" alt="Eventos de Junio"></div>
+		<div class="col-md-6 col-lg-2"><img class="img-fluid rounded-circle" width="75%" src="jpg/julio.jpg" alt="Eventos de Julio"></div>
+		<div class="col-md-6 col-lg-2"><img class="img-fluid rounded-circle" width="75%" src="jpg/agosto.jpg" alt="Eventos de Agosto"></div>
+		<div class="col-md-6 col-lg-2"><img class="img-fluid rounded-circle" width="75%" src="jpg/septiembre.jpg" alt="Eventos de Setiembre"></div>
+		<div class="col-md-6 col-lg-2"><img class="img-fluid rounded-circle" width="75%" src="jpg/octubre.jpg" alt="Eventos de Octubre"></div>
+		<div class="col-md-6 col-lg-2"><img class="img-fluid rounded-circle" width="75%" src="jpg/noviembre.jpg" alt="Eventos de Noviembre"></div>
+		<div class="col-md-6 col-lg-2"><img class="img-fluid rounded-circle" width="75%" src="jpg/diciembre.jpg" alt="Eventos de Diciembre"></div>
+		</div>
+	</div>
+
+      <script>
+      $("#toggle").click(function() {
+
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+      });
+      </script>
+</body>
+</html>
